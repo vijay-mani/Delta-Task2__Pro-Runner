@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Gravity Runner</title>
+      <link rel="icon" href="File/Images/Apple.png" type="image/x-Apple" />
+
+      <meta property="og:image" content="File/Images/Game-Page.png" />
+      
+      <link rel="stylesheet" href="style.css" />
+
+    </head>
+   <body class="flexcol-center">
+      <div id="title" class="title padding-20">
+         <h1>GRAVITY RUNNER</h1>
+      </div>
+      <br>
+      <h3>
+         <div id="input-name" class="flexcol-center">
+         <label for="name">Enter Your Name:-</label>
+         <input type="text" autocomplete="off" name="name" id="name" />
+         </div>
+      </h3>
+      <button id="play-btn" onclick="play();">PLAY</button>
+      <div id="game-overlay" class="flexcol-center" style="z-index: +20">
+         <div id="game-overlay-text">Use Spacebar to Switch Gravity...</div>
+         <div id="view-scores-menu" class="flexcol-center">
+            <br />
+            <button id="viewscore-btn" onclick="viewHighScores();">High Scores</button>
+            <br />
+            <button id="playagain-btn" onclick="window.location.reload()">Play Again</button>
+         </div>
+      </div>
+      <h2>
+         <div id="score"></div>
+      </h2>
+      <br>
+      <div id="outer-container">
+         <div id="canvas-container" class="flexcol-center">
+            <canvas id="game" width="800px" height="450px" style="z-index: -10"></canvas>
+            <canvas id="object" width="800px" height="450px" style="z-index: +10"></canvas>
+         </div>
+      </div>
+      <div id="high-scores" class="flexcol-center">
+         <h2>High Scores</h2>
+         <br />
+         <ol id="high-scores-list"></ol>
+         <br />
+         <button onclick="window.location.reload()">Play Again</button>
+      </div>
+      <script src="process.js"></script>
+   </body>
+</html>

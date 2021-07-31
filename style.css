@@ -1,0 +1,130 @@
+
+#canvas-container {
+   position: relative;
+}
+#canvas-container > canvas {
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+#score {
+   display: none;
+   align-self: center;
+   padding-top: 20px;
+   height: 10px;
+}
+
+#game {
+   display: none;
+   background-color: black;
+}
+
+#game-overlay {
+   font-weight: 700;
+   display: none;
+   position: absolute;
+   background-color: black;
+   color: white;
+   justify-content: center;
+   opacity: 0.5;
+   z-index: 10;
+   overflow: auto;
+   width: 800px;
+   height: 450px;
+}
+
+.padding-20 {
+   padding: 35px;
+}
+
+#outer-container {
+   width: 810px;
+   height: 460px;
+   display: none;
+   border: 5px solid gray;
+   border-radius: 5px;
+}
+
+#game {
+   background-color: black;
+}
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 100vh;
+   background: #000428;
+   background: linear-gradient(to right, #ffffff, #000000);
+   color: rgb(255, 0, 0);
+   justify-content: center;
+}
+
+#title {
+   font-size: 40px;
+   background: linear-gradient(to right, #00e1ff, #00ff0d);
+   color: #fffb00;
+}
+ 
+.flexcol-center {
+   flex-direction: column;
+   display: flex;
+   align-items: center;
+}
+
+.container {
+   justify-content: space-around;
+}
+
+#input-name {
+   align-items: flex-start;
+   padding-bottom: 20px;
+}
+
+#name {
+   background-color: transparent;
+   color: rgb(253, 253, 253);
+   border-radius: 5px;
+   font-family: "Poppins", sans-serif;
+   line-height: 2;
+   border: 1px solid black;
+}
+
+#name {
+   color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+}
+
+button {
+   width: fit-content;
+   color: white;
+   border-radius: 5px;
+   line-height: 2;
+   padding: 0 20px;
+   background-color: transparent;
+}
+button:hover {
+   color: black;
+   background-color: rgb(255, 255, 255);
+}
+
+#canvas-container {
+   display: flex;
+   padding: 0;
+   height: 450px;
+}
+
+#view-scores-menu {
+   display: none;
+}
+
+#high-scores {
+   display: none;
+}
+
+#game {
+   background-color: rgb(0, 0, 0);
+}
